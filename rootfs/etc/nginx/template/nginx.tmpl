@@ -955,7 +955,7 @@ stream {
             {{ end }}
 
             {{ if $location.ExternalAuth.SigninURL }}
-            error_page 401 = {{ buildAuthSignURL $location.ExternalAuth.SigninURL }};
+            error_page 401 = {{ $location.ExternalAuth.SigninURL }};
             {{ end }}
 
             {{ if $location.BasicDigestAuth.Secured }}
